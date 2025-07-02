@@ -1,23 +1,18 @@
 package com.passmanager.passwords.model;
 
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Document(collection = "passwords")
+@Document(collection = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Password {
+public class User {
     @Id
     private String id;
-    private String site;
     private String username;
+    private String email;
     private String password;
-    private String userId;
 }
