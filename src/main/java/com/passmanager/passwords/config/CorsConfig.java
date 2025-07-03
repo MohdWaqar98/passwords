@@ -18,7 +18,7 @@ public class CorsConfig {
         // ✅ Add both local and production frontend URLs
         config.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173",             // Local frontend
-            "https://your-frontend.vercel.app",  // Production frontend (e.g. Vercel, Netlify etc.)
+            "https://pass-op-lilac.vercel.app",  // Production frontend (e.g. Vercel, Netlify etc.)
             "https://www.yourdomain.com"         // Optional: custom domain (if you use one)
         ));
 
