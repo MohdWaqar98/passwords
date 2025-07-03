@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173", "https://pass-op-lilac.vercel.app/") // local & prod
+                        .allowedOrigins("http://localhost:5173", "https://pass-op-lilac.vercel.app") // local & prod
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true); // JWT support
